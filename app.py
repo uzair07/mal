@@ -15,4 +15,4 @@ def success():
         return render_template("success.html",name='The file %s is %s' % (f.filename,['malicious', 'legitimate'][s]))
   
 if __name__ == '__main__':  
-    app.run(debug = True)  
+    app.run(host='0.0.0.0',port=80,debug = True)  
